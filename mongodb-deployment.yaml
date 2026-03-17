@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mongo-init-script
+  namespace: praveen-ns
 data:
   init.js: |
     db = db.getSiblingDB('hr_system');
@@ -22,6 +23,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
+  namespace: praveen-ns
 spec:
   replicas: 1
   selector:
@@ -56,6 +58,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodb-service
+  namespace: praveen-ns
 spec:
   selector:
     app: mongodb
