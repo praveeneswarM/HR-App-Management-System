@@ -44,42 +44,42 @@ spec:
         - name: PORT
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: PORT
         - name: MONGO_URI
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: MONGO_URI
         - name: DB_NAME
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: DB_NAME
         - name: MONGO_USERNAME
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: MONGO_USERNAME
         - name: MONGO_PASSWORD
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: MONGO_PASSWORD
         - name: DEFAULT_ADMIN_ID
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: DEFAULT_ADMIN_ID
         - name: DEFAULT_ADMIN_PASSWORD
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: DEFAULT_ADMIN_PASSWORD
         - name: LOG_LEVEL
           valueFrom:
             configMapKeyRef:
-              name: hr-app-config
+              name: hr-config
               key: LOG_LEVEL
 
         - name: DB_NAME
